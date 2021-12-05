@@ -386,7 +386,7 @@
             </ul>
 
         </div>
-
+<!-- 
         <div class="footer-form-section">
             <p class="footer-text">Подпишитесь на рассылку</p>
             <form class="footer-form">
@@ -400,45 +400,77 @@
             </form>
 
 
-        </div>
+        </div> -->
+                <div class="footer-form-section">
+                    <form class="footer-form">
+                        <label>
+                            <p class="footer-text">Подпишитесь на рассылку</p>
+                        <input type="email" name="email" placeholder="E-mail" class="footer-form-input" />
+                        </label>
+                        <button type="submit" class="footer-form-btn">Подписаться
+                            <svg class="footer-form-icon" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                
+                    </form>
+                
+                
+                </div>
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn" type="button" data-modal-close></button>
+            <button class="modal-btn" type="button" data-modal-close>
+                <svg width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+
+
+
+
+
+
+
 
             <form class="form-hero">
                 <H2 class="form-header">Оставьте свои данные, мы вам перезвоним</H2>
-                <div class="field-form-hero">
+                <label class="form-label">Имя
                     <input type="text" class="form-input" name="user-name" id="name" autofocus />
-                    <label for="name" class="form-label">Имя</label>
-                </div>
+                    <svg class="hero-form-icon" width="12" height="12">
+                        <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                    </svg>
+                </label>
 
-                <div class="field-form-hero">
-                    <input type="tel" class="form-input" name="tel" id="tel" />
-                    <label for="tel" class="form-label">Телефон</label>
-                </div>
-
-                <div class="field-form-hero">
-                    <input type="emeil"class="form-input" name="emeil" id="emeil" />
-                    <label for="emeil" class="form-label">Почта</label>
-                </div>
-
-
-
-
-
+                <label class="form-label">Телефон
+                    <input type="tel" class="form-input" name="phone-number" id="tel" />
+                    <svg class="hero-form-icon" width="13" height="13">
+                        <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                    </svg>
                 
-                <div class="field-form-hero">
-                    <label for="comment" class="form-label">Комментарий</label>
-                    <textarea name="comment" id="comment" rows="8" placeholder="Введите текст" class="form-textarea"></textarea>
-                </div>
+                </label>
 
-                <div class="field-form-checkbox">
-                    <input type="checkbox"  name="policy" id="policy" />
-                    <label for="policy" class="form-label-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="form-link">Условия договора</a></label>
-                </div>
+                <label class="form-label">Почта
+                    <input type="emeil"class="form-input" name="emeil" id="emeil" />
+                    <svg class="hero-form-icon" width="15" height="12">
+                        <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                    </svg>
+                </label>
+                
+                <label class="form-label">Комментарий
+                    <textarea name="comment" id="comment" rows="8" placeholder="Введите текст" class="form-textarea"></textarea>
+                    
+                </label>
+
+                <label class="form-label-checkbox">
+                    <input type="checkbox" class="checkbox" />
+                    <span class="icon"></span>
+                    <span class="label">
+                    Соглашаюсь с рассылкой и принимаю <a href="" class="form-link">Условия договора</a></span>
+                </label>
+                
                 
                 <button type="submit" class="form-btn">Отправить</button>
 
