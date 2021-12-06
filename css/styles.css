@@ -692,12 +692,14 @@ body {
   color: #757575;
 }
 .hero-form-icon {
-  /* outline: 1px solid red; */
   position: absolute;
   left: 12px;
   top: 45%;
   transform: translateY(-50%);
-  transition: transform var(--time-transit) var(--distribution-function);
+  transition: transform var(--time-transit) var(--distribution-function),
+    fill var(--time-transit) var(--distribution-function);
+  width: 18px;
+  height: 18px;
 }
 
 .form-textarea {
@@ -753,6 +755,7 @@ body {
   border-radius: 4px;
   margin-right: 8px;
   cursor: pointer;
+  transition: background-image var(--time-transit) var(--distribution-function);
 }
 .checkbox:checked + .icon {
   border-color: transparent;
